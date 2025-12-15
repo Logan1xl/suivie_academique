@@ -8,6 +8,7 @@ class SuivieAcademiqueApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Le test est lance");
 	}
 
 }

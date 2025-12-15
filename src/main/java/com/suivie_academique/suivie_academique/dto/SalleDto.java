@@ -26,4 +26,5 @@ public class SalleDto {
 
     // Statut de la salle (OCCUPE, LIBRE, FERMER)
     private String statusSalle;
+
 }
