@@ -1,0 +1,168 @@
+2025-12-18 08:46:09 INFO  userID= IPadress= - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 08:46:09 INFO  userID= IPadress= - Starting SuivieAcademiqueApplication using Java 17.0.16 with PID 19172 (A:\EADL\Semestre_1\Developpement avance\suivie_academique\target\classes started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 08:46:09 INFO  userID= IPadress= - The following 1 profile is active: "dev"
+2025-12-18 08:46:09 INFO  userID= IPadress= - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-18 08:46:09 INFO  userID= IPadress= - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-18 08:46:10 INFO  userID= IPadress= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 08:46:10 INFO  userID= IPadress= - Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2025-12-18 08:46:11 INFO  userID= IPadress= - Tomcat initialized with port 8089 (http)
+2025-12-18 08:46:11 INFO  userID= IPadress= - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:46:11 INFO  userID= IPadress= - Starting service [Tomcat]
+2025-12-18 08:46:11 INFO  userID= IPadress= - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 08:46:11 INFO  userID= IPadress= - Initializing Spring embedded WebApplicationContext
+2025-12-18 08:46:11 INFO  userID= IPadress= - Root WebApplicationContext: initialization completed in 2359 ms
+2025-12-18 08:46:11 INFO  userID= IPadress= - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 08:46:11 INFO  userID= IPadress= - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 08:46:11 INFO  userID= IPadress= - HHH000026: Second-level cache disabled
+2025-12-18 08:46:12 INFO  userID= IPadress= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 08:46:12 INFO  userID= IPadress= - HikariPool-1 - Starting...
+2025-12-18 08:46:12 INFO  userID= IPadress= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f692d68
+2025-12-18 08:46:12 INFO  userID= IPadress= - HikariPool-1 - Start completed.
+2025-12-18 08:46:12 INFO  userID= IPadress= - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 08:46:13 INFO  userID= IPadress= - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 08:46:13 INFO  userID= IPadress= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 08:46:14 INFO  userID= IPadress= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 08:46:15 INFO  userID= IPadress= - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 08:46:16 INFO  userID= IPadress= - Exposing 5 endpoints beneath base path '/actuator'
+2025-12-18 08:46:17 INFO  userID= IPadress= - LiveReload server is running on port 35729
+2025-12-18 08:46:17 INFO  userID= IPadress= - Starting ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:46:17 INFO  userID= IPadress= - Tomcat started on port 8089 (http) with context path '/'
+2025-12-18 08:46:17 INFO  userID= IPadress= - Started SuivieAcademiqueApplication in 8.895 seconds (process running for 9.856)
+2025-12-18 08:51:50 INFO  userID= IPadress= - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18 08:51:52 INFO  userID= IPadress= - Graceful shutdown complete
+2025-12-18 08:51:52 INFO  userID= IPadress= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 08:51:52 INFO  userID= IPadress= - HikariPool-1 - Shutdown initiated...
+2025-12-18 08:51:52 INFO  userID= IPadress= - HikariPool-1 - Shutdown completed.
+2025-12-18 08:51:55 INFO  userID= IPadress= - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 08:51:56 INFO  userID= IPadress= - Starting SuivieAcademiqueApplication using Java 17.0.16 with PID 22648 (A:\EADL\Semestre_1\Developpement avance\suivie_academique\target\classes started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 08:51:56 INFO  userID= IPadress= - The following 1 profile is active: "dev"
+2025-12-18 08:51:56 INFO  userID= IPadress= - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-18 08:51:56 INFO  userID= IPadress= - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-18 08:51:57 INFO  userID= IPadress= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 08:51:57 INFO  userID= IPadress= - Finished Spring Data repository scanning in 73 ms. Found 5 JPA repository interfaces.
+2025-12-18 08:51:58 INFO  userID= IPadress= - Tomcat initialized with port 8089 (http)
+2025-12-18 08:51:58 INFO  userID= IPadress= - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:51:58 INFO  userID= IPadress= - Starting service [Tomcat]
+2025-12-18 08:51:58 INFO  userID= IPadress= - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 08:51:58 INFO  userID= IPadress= - Initializing Spring embedded WebApplicationContext
+2025-12-18 08:51:58 INFO  userID= IPadress= - Root WebApplicationContext: initialization completed in 2298 ms
+2025-12-18 08:51:58 INFO  userID= IPadress= - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 08:51:58 INFO  userID= IPadress= - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 08:51:58 INFO  userID= IPadress= - HHH000026: Second-level cache disabled
+2025-12-18 08:51:59 INFO  userID= IPadress= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 08:51:59 INFO  userID= IPadress= - HikariPool-1 - Starting...
+2025-12-18 08:51:59 INFO  userID= IPadress= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fac03b3
+2025-12-18 08:51:59 INFO  userID= IPadress= - HikariPool-1 - Start completed.
+2025-12-18 08:51:59 INFO  userID= IPadress= - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 08:52:00 INFO  userID= IPadress= - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 08:52:00 INFO  userID= IPadress= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 08:52:01 INFO  userID= IPadress= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 08:52:02 INFO  userID= IPadress= - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 08:52:04 INFO  userID= IPadress= - Exposing 5 endpoints beneath base path '/actuator'
+2025-12-18 08:52:04 INFO  userID= IPadress= - LiveReload server is running on port 35729
+2025-12-18 08:52:04 INFO  userID= IPadress= - Starting ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:52:04 INFO  userID= IPadress= - Tomcat started on port 8089 (http) with context path '/'
+2025-12-18 08:52:04 INFO  userID= IPadress= - Started SuivieAcademiqueApplication in 9.387 seconds (process running for 10.391)
+2025-12-18 08:52:25 INFO  userID= IPadress= - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18 08:52:26 INFO  userID= IPadress= - Graceful shutdown complete
+2025-12-18 08:52:26 INFO  userID= IPadress= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 08:52:26 INFO  userID= IPadress= - HikariPool-1 - Shutdown initiated...
+2025-12-18 08:52:26 INFO  userID= IPadress= - HikariPool-1 - Shutdown completed.
+2025-12-18 08:52:31 INFO  userID= IPadress= - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 08:52:31 INFO  userID= IPadress= - Starting SuivieAcademiqueApplication using Java 17.0.16 with PID 15052 (A:\EADL\Semestre_1\Developpement avance\suivie_academique\target\classes started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 08:52:31 INFO  userID= IPadress= - The following 1 profile is active: "dev"
+2025-12-18 08:52:31 INFO  userID= IPadress= - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-18 08:52:31 INFO  userID= IPadress= - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-18 08:52:32 INFO  userID= IPadress= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 08:52:32 INFO  userID= IPadress= - Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+2025-12-18 08:52:33 INFO  userID= IPadress= - Tomcat initialized with port 8089 (http)
+2025-12-18 08:52:33 INFO  userID= IPadress= - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:52:33 INFO  userID= IPadress= - Starting service [Tomcat]
+2025-12-18 08:52:33 INFO  userID= IPadress= - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 08:52:33 INFO  userID= IPadress= - Initializing Spring embedded WebApplicationContext
+2025-12-18 08:52:33 INFO  userID= IPadress= - Root WebApplicationContext: initialization completed in 2290 ms
+2025-12-18 08:52:34 INFO  userID= IPadress= - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 08:52:34 INFO  userID= IPadress= - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 08:52:34 INFO  userID= IPadress= - HHH000026: Second-level cache disabled
+2025-12-18 08:52:34 INFO  userID= IPadress= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 08:52:34 INFO  userID= IPadress= - HikariPool-1 - Starting...
+2025-12-18 08:52:34 INFO  userID= IPadress= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a7a3619
+2025-12-18 08:52:34 INFO  userID= IPadress= - HikariPool-1 - Start completed.
+2025-12-18 08:52:34 INFO  userID= IPadress= - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 08:52:36 INFO  userID= IPadress= - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 08:52:36 INFO  userID= IPadress= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 08:52:36 INFO  userID= IPadress= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 08:52:37 INFO  userID= IPadress= - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 08:52:39 INFO  userID= IPadress= - Exposing 5 endpoints beneath base path '/actuator'
+2025-12-18 08:52:39 INFO  userID= IPadress= - LiveReload server is running on port 35729
+2025-12-18 08:52:40 INFO  userID= IPadress= - Starting ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:52:40 INFO  userID= IPadress= - Tomcat started on port 8089 (http) with context path '/'
+2025-12-18 08:52:40 INFO  userID= IPadress= - Started SuivieAcademiqueApplication in 9.254 seconds (process running for 10.209)
+2025-12-18 08:52:58 INFO  userID= IPadress= - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18 08:53:00 INFO  userID= IPadress= - Graceful shutdown complete
+2025-12-18 08:53:00 INFO  userID= IPadress= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 08:53:00 INFO  userID= IPadress= - HikariPool-1 - Shutdown initiated...
+2025-12-18 08:53:00 INFO  userID= IPadress= - HikariPool-1 - Shutdown completed.
+2025-12-18 08:53:22 INFO  userID= IPadress= - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 08:53:22 INFO  userID= IPadress= - Starting SuivieAcademiqueApplication using Java 17.0.16 with PID 20944 (A:\EADL\Semestre_1\Developpement avance\suivie_academique\target\classes started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 08:53:22 INFO  userID= IPadress= - The following 1 profile is active: "dev"
+2025-12-18 08:53:22 INFO  userID= IPadress= - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-18 08:53:22 INFO  userID= IPadress= - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-18 08:53:23 INFO  userID= IPadress= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 08:53:23 INFO  userID= IPadress= - Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+2025-12-18 08:53:24 INFO  userID= IPadress= - Tomcat initialized with port 8089 (http)
+2025-12-18 08:53:24 INFO  userID= IPadress= - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:53:24 INFO  userID= IPadress= - Starting service [Tomcat]
+2025-12-18 08:53:24 INFO  userID= IPadress= - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 08:53:24 INFO  userID= IPadress= - Initializing Spring embedded WebApplicationContext
+2025-12-18 08:53:24 INFO  userID= IPadress= - Root WebApplicationContext: initialization completed in 2357 ms
+2025-12-18 08:53:25 INFO  userID= IPadress= - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 08:53:25 INFO  userID= IPadress= - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 08:53:25 INFO  userID= IPadress= - HHH000026: Second-level cache disabled
+2025-12-18 08:53:25 INFO  userID= IPadress= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 08:53:25 INFO  userID= IPadress= - HikariPool-1 - Starting...
+2025-12-18 08:53:25 INFO  userID= IPadress= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5836bdf1
+2025-12-18 08:53:25 INFO  userID= IPadress= - HikariPool-1 - Start completed.
+2025-12-18 08:53:25 INFO  userID= IPadress= - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 08:53:26 INFO  userID= IPadress= - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 08:53:27 INFO  userID= IPadress= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 08:53:27 INFO  userID= IPadress= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 08:53:28 INFO  userID= IPadress= - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 08:53:30 INFO  userID= IPadress= - Exposing 5 endpoints beneath base path '/actuator'
+2025-12-18 08:53:30 INFO  userID= IPadress= - LiveReload server is running on port 35729
+2025-12-18 08:53:30 INFO  userID= IPadress= - Starting ProtocolHandler ["http-nio-8089"]
+2025-12-18 08:53:30 INFO  userID= IPadress= - Tomcat started on port 8089 (http) with context path '/'
+2025-12-18 08:53:30 INFO  userID= IPadress= - Started SuivieAcademiqueApplication in 9.027 seconds (process running for 9.996)
+2025-12-18 09:24:51 INFO  userID= IPadress= - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18 09:24:52 INFO  userID= IPadress= - Graceful shutdown complete
+2025-12-18 09:24:52 INFO  userID= IPadress= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 09:24:52 INFO  userID= IPadress= - HikariPool-1 - Shutdown initiated...
+2025-12-18 09:24:52 INFO  userID= IPadress= - HikariPool-1 - Shutdown completed.

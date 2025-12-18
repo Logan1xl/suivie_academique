@@ -9,7 +9,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -17,6 +16,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.HashMap;
@@ -40,16 +40,16 @@ class AuthControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
-    @MockBean
+    @MockitoBean
     private AuthenticationManager authenticationManager;
 
-    @MockBean
+    @MockitoBean
     private PersonnelRepository personnelRepository;
 
-    @MockBean
+    @MockitoBean
     private BCryptPasswordEncoder passwordEncoder;
 
-    @MockBean
+    @MockitoBean
     private JwtUtils jwtUtils;
 
     private Personnel personnel;
@@ -191,7 +191,7 @@ class AuthControllerTest {
     @Test
     @WithMockUser
     void register_WithAllRoles() throws Exception {
-        String[] roles = {"ENSEIGNANT", "RESPONSABLE", "ADMIN"};
+        String[] roles = {"ENSEIGNANT", "RESPONSABLE_ACADEMIQUE", "RESPONSABLE_PERSONNEL"};
 
         for (String role : roles) {
             Map<String, String> request = new HashMap<>(registerRequest);

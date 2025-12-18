@@ -4,6 +4,9 @@ import com.suivie_academique.suivie_academique.dto.PersonnelDto;
 import com.suivie_academique.suivie_academique.entities.Personnel;
 import com.suivie_academique.suivie_academique.repositories.PersonnelRepository;
 import com.suivie_academique.suivie_academique.security.JwtUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.Authentication;
@@ -21,6 +24,7 @@ public class AuthController {
     private final PersonnelRepository personnelRepository;
     private final BCryptPasswordEncoder passwordEncoder;
     private final JwtUtils jwtUtils;
+    private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
 
     public AuthController(AuthenticationManager authenticationManager,
                           PersonnelRepository personnelRepository,
@@ -40,7 +44,11 @@ public class AuthController {
         String sexe = body.get("sexePersonnel");
         String role = body.get("rolePersonnel");
         String rawPassword = body.get("motDePasse");
-
+        // ✅ validation minimale
+        if (login == null || nom == null || phone == null ||
+                sexe == null || role == null || rawPassword == null) {
+            return ResponseEntity.badRequest().body("Champs obligatoires manquants");
+        }
         if (personnelRepository.existsByLoginPersonnel(login)) {
             return ResponseEntity.badRequest().body("Login already used");
         }
@@ -79,6 +87,11 @@ public ResponseEntity<?> login(@RequestBody Map<String, String> body) {
 
         Personnel personnel = personnelOpt.get();
 
+        // Injecter l'ID métier dans MDC
+        MDC.put("userId", personnel.getCodePersonnel());
+
+        logger.info("Connexion réussie");
+
         // Générer le token JWT
         String jwt = jwtUtils.generateToken(login);
 
@@ -98,6 +111,7 @@ public ResponseEntity<?> login(@RequestBody Map<String, String> body) {
         );
 
     } catch (BadCredentialsException ex) {
+        logger.warn("Tentative de connexion échouée pour login={}", login);
         return ResponseEntity.status(401).body("Login ou mot de passe incorrect");
     }
 }

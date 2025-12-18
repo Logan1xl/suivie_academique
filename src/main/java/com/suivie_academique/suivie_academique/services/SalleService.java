@@ -6,10 +6,13 @@ import com.suivie_academique.suivie_academique.mappers.SalleMapper;
 import com.suivie_academique.suivie_academique.repositories.SalleRepository;
 import com.suivie_academique.suivie_academique.utils.SalleStatus;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+
 
 /**
  * Service pour la gestion des salles
@@ -19,6 +22,9 @@ import java.util.List;
 @RequiredArgsConstructor  // Injection de dépendances par constructeur (Lombok)
 @Transactional
 public class SalleService {
+
+    private static final Logger logger =  LoggerFactory.getLogger(SalleService.class);
+
 
     // Injection automatique par Spring
     private final SalleRepository salleRepository;
@@ -109,12 +115,17 @@ public class SalleService {
      * @param codeSalle le code de la salle à supprimer
      */
     public void deleteSalle(String codeSalle) {
+
+        logger.info("Recherche de la salle avec code" +codeSalle);
         // Vérifier que la salle existe
         if (!salleRepository.existsById(codeSalle)) {
+            logger.error("Salle introuvable donc modification impossible");
             throw new RuntimeException("Salle introuvable avec le code: " + codeSalle);
+        }else{
+            salleRepository.deleteById(codeSalle);
+            logger.info("Salle supprimee avec succes" +codeSalle);
         }
 
-        salleRepository.deleteById(codeSalle);
     }
 
     /**
