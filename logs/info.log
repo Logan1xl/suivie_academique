@@ -166,3 +166,68 @@
 2025-12-18 09:24:52 INFO  userID= IPadress= - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-12-18 09:24:52 INFO  userID= IPadress= - HikariPool-1 - Shutdown initiated...
 2025-12-18 09:24:52 INFO  userID= IPadress= - HikariPool-1 - Shutdown completed.
+2025-12-18 12:57:11 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 24904 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 12:57:11 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 12:57:13 INFO  userID= IPadress= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 12:57:13 INFO  userID= IPadress= - Finished Spring Data repository scanning in 145 ms. Found 5 JPA repository interfaces.
+2025-12-18 12:57:15 INFO  userID= IPadress= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 12:57:15 INFO  userID= IPadress= - HikariPool-1 - Starting...
+2025-12-18 12:57:15 INFO  userID= IPadress= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@903c13
+2025-12-18 12:57:15 INFO  userID= IPadress= - HikariPool-1 - Start completed.
+2025-12-18 12:57:17 INFO  userID= IPadress= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 12:57:18 INFO  userID= IPadress= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 12:57:22 INFO  userID= IPadress= - Exposing 5 endpoints beneath base path '/actuator'
+2025-12-18 12:57:23 INFO  userID= IPadress= - Started SuivieAcademiqueApplicationTests in 12.58 seconds (process running for 14.422)
+2025-12-18 12:57:24 INFO  userID= IPadress= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 12:57:24 INFO  userID= IPadress= - HikariPool-1 - Shutdown initiated...
+2025-12-18 12:57:24 INFO  userID= IPadress= - HikariPool-1 - Shutdown completed.
+2025-12-18 13:33:10 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 17444 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:33:10 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:39:16 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 17848 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:39:16 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:39:39 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 24984 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:39:39 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:39:57 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 3328 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:39:57 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:41:54 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 19040 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:41:54 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:48:21 INFO  userID= IPadress= - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 13:48:21 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 24696 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:48:21 INFO  userID= IPadress= - The following 1 profile is active: "dev"
+2025-12-18 13:48:23 INFO  userID= IPadress= - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 13:48:24 INFO  userID= IPadress= - Finished Spring Data repository scanning in 111 ms. Found 5 JPA repository interfaces.
+2025-12-18 13:48:25 INFO  userID= IPadress= - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 13:48:25 INFO  userID= IPadress= - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 13:48:25 INFO  userID= IPadress= - HHH000026: Second-level cache disabled
+2025-12-18 13:48:26 INFO  userID= IPadress= - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 13:48:26 INFO  userID= IPadress= - HikariPool-1 - Starting...
+2025-12-18 13:48:26 INFO  userID= IPadress= - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58ac0823
+2025-12-18 13:48:26 INFO  userID= IPadress= - HikariPool-1 - Start completed.
+2025-12-18 13:48:26 INFO  userID= IPadress= - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 13:48:28 INFO  userID= IPadress= - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 13:48:28 INFO  userID= IPadress= - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 13:48:28 INFO  userID= IPadress= - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 13:48:30 INFO  userID= IPadress= - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 13:48:33 INFO  userID= IPadress= - Exposing 5 endpoints beneath base path '/actuator'
+2025-12-18 13:48:34 INFO  userID= IPadress= - Started SuivieAcademiqueApplicationTests in 13.192 seconds (process running for 14.951)
+2025-12-18 13:48:35 INFO  userID= IPadress= - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 13:48:35 INFO  userID= IPadress= - HikariPool-1 - Shutdown initiated...
+2025-12-18 13:48:35 INFO  userID= IPadress= - HikariPool-1 - Shutdown completed.
+2025-12-18 13:49:06 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 22832 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:49:06 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:51:39 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 22328 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:51:39 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:51:51 INFO  userID= IPadress= - Started SuivieAcademiqueApplicationTests in 12.806 seconds (process running for 14.534)
+2025-12-18 13:53:00 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 26160 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:53:00 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:53:12 INFO  userID= IPadress= - Started SuivieAcademiqueApplicationTests in 12.06 seconds (process running for 13.805)
+2025-12-18 13:53:28 INFO  userID= IPadress= - Starting SuivieAcademiqueApplicationTests using Java 17.0.16 with PID 18324 (started by Wulfrid MBONGO in A:\EADL\Semestre_1\Developpement avance\suivie_academique)
+2025-12-18 13:53:28 INFO  userID= IPadress= - The following 1 profile is active: "test"
+2025-12-18 13:53:41 INFO  userID= IPadress= - Started SuivieAcademiqueApplicationTests in 13.351 seconds (process running for 14.995)

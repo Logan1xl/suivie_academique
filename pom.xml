@@ -83,6 +83,20 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- Ajoutez cette dépendance dans la section <dependencies> -->
+
+		<!-- ========== H2 DATABASE (Pour les tests) ========== -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 
 		<!-- ========== LOMBOK - Réduction du boilerplate code ========== -->
 

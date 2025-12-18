@@ -98,7 +98,7 @@ public interface ProgrammationRepository extends JpaRepository<Programmation, In
      * Utilise CURRENT_DATE pour la date du jour
      */
     @Query("SELECT p FROM Programmation p WHERE p.salle.codeSalle = :codeSalle " +
-            "AND DATE(p.dateProgrammation) = CURRENT_DATE")
+            "AND CAST(p.dateProgrammation AS date) = CURRENT_DATE")
     List<Programmation> findProgrammationsDuJour(@Param("codeSalle") String codeSalle);
 
     /**

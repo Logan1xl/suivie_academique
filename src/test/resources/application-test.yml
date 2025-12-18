@@ -1,0 +1,30 @@
+# src/test/resources/application-test.yml
+# Configuration pour les tests avec H2
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MySQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: false
+        show_sql: false
+    show-sql: false
+
+  h2:
+    console:
+      enabled: false
+
+# Désactiver la sécurité pour les tests si nécessaire
+logging:
+  level:
+    org.springframework.security: WARN
+    org.hibernate: WARN
+    com.suivie_academique: INFO
