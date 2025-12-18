@@ -221,7 +221,7 @@ class AuthControllerTest {
                         .with(csrf())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(incompleteRequest)))
-                .andExpect(status().isOk()); // Le contrôleur ne valide pas les champs
+                .andExpect(status().isBadRequest()); // Le contrôleur ne valide pas les champs
     }
 
     @Test

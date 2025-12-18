@@ -7,9 +7,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.Arrays;
@@ -31,7 +31,7 @@ class CoursControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
-    @MockBean
+    @MockitoBean
     private CourService coursService;
 
     private CoursDto coursDto;
@@ -40,8 +40,10 @@ class CoursControllerTest {
     void setUp() {
         coursDto = new CoursDto();
         coursDto.setCodeCours("MATH101");
-        coursDto.setDescCours("Mathématiques I");
-        coursDto.setNbHeureCours(String.valueOf(45));
+        coursDto.setLabelCours("Mathématiques I");
+        coursDto.setDescCours("salle tres joviale");
+        coursDto.setNbCreditCours("Credit 5");
+        coursDto.setNbHeureCours("45H");
     }
 
     @Test
@@ -56,7 +58,9 @@ class CoursControllerTest {
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.codeCours").value("MATH101"))
                 .andExpect(jsonPath("$.labelCours").value("Mathématiques I"))
-                .andExpect(jsonPath("$.nbHeureCours").value(String.valueOf(45)));
+                .andExpect(jsonPath("$.descCours").value("salle tres joviale"))
+                .andExpect(jsonPath("$.nbCreditCours").value("Credit 5"))
+                .andExpect(jsonPath("$.nbHeureCours").value("45H"));
 
         verify(coursService, times(1)).creerCour(any(CoursDto.class));
     }
