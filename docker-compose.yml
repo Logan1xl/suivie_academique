@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  # ========== BASE DE DONNÉES MYSQL (Commune à tous les profils) ==========
+  # ========== BASE DE DONNÉES MYSQL ==========
   mysqldb:
     image: mysql:8.0
     container_name: sa_mysql_db
@@ -23,19 +23,21 @@ services:
       retries: 10
       start_period: 30s
 
-  # ========== APPLICATION - MODE DEV ==========
-  sa_api_dev:
+  # ========== APPLICATION (UN SEUL SERVICE) ==========
+  sa_api_compose:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: sa_api_app_dev
+    container_name: sa_api_app
     restart: always
     ports:
       - "8085:8089"
     networks:
       - sa_net
     environment:
-      SPRING_PROFILES_ACTIVE: dev
+      # Profil défini par variable (défaut: dev)
+      SPRING_PROFILES_ACTIVE: ${PROFILE:-dev}
+
       SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/sa_api_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
@@ -47,64 +49,8 @@ services:
     depends_on:
       mysqldb:
         condition: service_healthy
-    profiles:
-      - dev
-
-  # ========== APPLICATION - MODE TEST ==========
-  sa_api_test:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: sa_api_app_test
-    restart: always
-    ports:
-      - "8086:8089"  # Port différent pour éviter conflit
-    networks:
-      - sa_net
-    environment:
-      SPRING_PROFILES_ACTIVE: test
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/sa_api_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
-      SPRING_JPA_HIBERNATE_DDL_AUTO: create-drop  # Recrée la DB à chaque test
-      SPRING_JPA_SHOW_SQL: "true"
-      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
-      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "false"
-      SERVER_PORT: 8089
-    depends_on:
-      mysqldb:
-        condition: service_healthy
-    profiles:
-      - test
-
-  # ========== APPLICATION - MODE PROD ==========
-  sa_api_prod:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: sa_api_app_prod
-    restart: always
-    ports:
-      - "8087:8089"  # Ou "80:8089" pour production réelle
-    networks:
-      - sa_net
-    environment:
-      SPRING_PROFILES_ACTIVE: prod
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/sa_api_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-      SPRING_DATASOURCE_USERNAME: ${DB_USERNAME:-root}
-      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD:-root}
-      SPRING_JPA_HIBERNATE_DDL_AUTO: validate  # Sécurisé : pas de modif auto en prod
-      SPRING_JPA_SHOW_SQL: "false"  # Désactivé pour les performances
-      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
-      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "false"
-      SERVER_PORT: 8089
-    depends_on:
-      mysqldb:
-        condition: service_healthy
-    env_file:
-      - .env  # Charge les variables sensibles depuis .env
-    profiles:
-      - prod
+    volumes:
+      - .m2:/root/.m2  # Cache Maven pour accélérer les builds
 
 # ========== RÉSEAUX ==========
 networks:

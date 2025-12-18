@@ -1,20 +1,21 @@
-# Utiliser une image Java comme base
+# Stage 1: Build
 FROM eclipse-temurin:17-jdk-alpine AS build
-
-# Définir le répertoire de travail
 WORKDIR /app
+
+# Copier et builder
 COPY . .
 RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
-# Étape 2 : Runtime
+# Stage 2: Runtime
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
+
+# Copier le JAR depuis le stage build
 COPY --from=build /app/target/*.jar app.jar
-COPY target/*.jar app.jar
 
-# Exposer le port sur lequel l'application écoute
-EXPOSE 8080
+# Exposer le port
+EXPOSE 8089
 
-# Commande pour démarrer l'application
+# Lancer l'application
 ENTRYPOINT ["java", "-jar", "app.jar"]
